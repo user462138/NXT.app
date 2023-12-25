@@ -1,0 +1,332 @@
+[
+  {
+    "user_id": 1,
+    "username": "user_1",
+    "emailAddress": "user1@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=1",
+    "description": "Description for user 1.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 2,
+    "username": "user_2",
+    "emailAddress": "user2@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=2",
+    "description": "Description for user 2.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 3,
+    "username": "user_3",
+    "emailAddress": "user3@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=3",
+    "description": "Description for user 3.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 4,
+    "username": "user_4",
+    "emailAddress": "user4@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=4",
+    "description": "Description for user 4.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 5,
+    "username": "user_5",
+    "emailAddress": "user5@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=5",
+    "description": "Description for user 5.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 6,
+    "username": "user_6",
+    "emailAddress": "user6@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=6",
+    "description": "Description for user 6.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 7,
+    "username": "user_7",
+    "emailAddress": "user7@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=7",
+    "description": "Description for user 7.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 8,
+    "username": "user_8",
+    "emailAddress": "user8@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=8",
+    "description": "Description for user 8.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 9,
+    "username": "user_9",
+    "emailAddress": "user9@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=9",
+    "description": "Description for user 9.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 10,
+    "username": "user_10",
+    "emailAddress": "user10@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=10",
+    "description": "Description for user 10.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 11,
+    "username": "user_11",
+    "emailAddress": "user11@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=11",
+    "description": "Description for user 11.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 12,
+    "username": "user_12",
+    "emailAddress": "user12@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=12",
+    "description": "Description for user 12.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 13,
+    "username": "user_13",
+    "emailAddress": "user13@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=13",
+    "description": "Description for user 13.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 14,
+    "username": "user_14",
+    "emailAddress": "user14@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=14",
+    "description": "Description for user 14.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 15,
+    "username": "user_15",
+    "emailAddress": "user15@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=15",
+    "description": "Description for user 15.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 16,
+    "username": "user_16",
+    "emailAddress": "user16@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=16",
+    "description": "Description for user 16.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 17,
+    "username": "user_17",
+    "emailAddress": "user17@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=17",
+    "description": "Description for user 17.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 18,
+    "username": "user_18",
+    "emailAddress": "user18@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=18",
+    "description": "Description for user 18.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 19,
+    "username": "user_19",
+    "emailAddress": "user19@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=19",
+    "description": "Description for user 19.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 20,
+    "username": "user_20",
+    "emailAddress": "user20@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=20",
+    "description": "Description for user 20.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 21,
+    "username": "user_21",
+    "emailAddress": "user21@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=21",
+    "description": "Description for user 21.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 22,
+    "username": "user_22",
+    "emailAddress": "user22@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=22",
+    "description": "Description for user 22.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 23,
+    "username": "user_23",
+    "emailAddress": "user23@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=23",
+    "description": "Description for user 23.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 24,
+    "username": "user_24",
+    "emailAddress": "user24@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=24",
+    "description": "Description for user 24.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 25,
+    "username": "user_25",
+    "emailAddress": "user25@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=25",
+    "description": "Description for user 25.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 26,
+    "username": "user_26",
+    "emailAddress": "user26@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=26",
+    "description": "Description for user 26.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 27,
+    "username": "user_27",
+    "emailAddress": "user27@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=27",
+    "description": "Description for user 27.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 28,
+    "username": "user_28",
+    "emailAddress": "user28@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=28",
+    "description": "Description for user 28.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 29,
+    "username": "user_29",
+    "emailAddress": "user29@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=29",
+    "description": "Description for user 29.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 30,
+    "username": "user_30",
+    "emailAddress": "user30@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=30",
+    "description": "Description for user 30.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 31,
+    "username": "user_31",
+    "emailAddress": "user31@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=31",
+    "description": "Description for user 31.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 32,
+    "username": "user_32",
+    "emailAddress": "user32@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=32",
+    "description": "Description for user 32.",
+    "friends": [],
+    "posts": []
+  },
+  {
+    "user_id": 33,
+    "username": "user_33",
+    "emailAddress": "user33@example.com",
+    "password": "1",
+    "image": "https://picsum.photos/250/250?random=33",
+    "description": "Description for user 33.",
+    "friends": [],
+    "posts": []
+  }
+]

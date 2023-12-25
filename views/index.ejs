@@ -1,0 +1,31 @@
+<%- include('partials/header'); %>
+<div>
+    <div class="flex-container">
+        <% for(let user of users) { %>
+            <% if (!( user.username === loggedInUser.username)) { %>
+                <div class="users">
+                    <img src="<%= user.image %>" alt="">
+                    <a href="/noaccess"><%= user.user_id %></a> 
+                    <a href="/noaccess"><%= user.username %></a> 
+                    <a href="/noaccess"><%= user.emailAddress %></a>
+                    <p><%= user.description %></p>
+                    <div class="friendshipStatus">
+                        <% if (!loggedInUser.friends.find(friend => friend === user.user_id)) { %>
+                            <form action="/addFriend" method="POST">
+                                <p>You're currently Not Friends</p>
+                                <button type="submit" name="addFriend" value="<%= user.user_id %>">Add Friend</button>    
+                            </form>
+                        <% } %>
+                        <% if (loggedInUser.friends.find(friend => friend === user.user_id)) { %>
+                            <form action="/deleteFriend" method="POST">
+                                <p>You're both Friends on NXT.</p>
+                                <button type="submit" name="deleteFriend" value="<%= user.user_id %>">Delete Friend</button>
+                            </form>
+                        <% } %>
+                    </div>
+                </div>
+            <% } %>
+        <% } %>
+    </div>
+</div>
+<%- include('partials/footer'); %>

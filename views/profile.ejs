@@ -1,0 +1,74 @@
+<%- include('partials/header'); %>
+<div class="flex-container-prfile">
+  <h1>Account Settings</h1>
+  <div class="profile">
+    <div class="logout">
+      <form action="/logout" method="post">
+        <a href=""><button type="submit">Logout</button></a>
+      </form>
+    </div>
+    <div>
+      <img src="<%= loggedInUser.image %>" alt="" />
+    </div>
+    <p><%= loggedInUser.username %></p>
+    <p><%= loggedInUser.emailAddress %></p>
+    <p><%= loggedInUser.description %></p>
+    <button id="toggleButton">Edit profile</button>
+  </div>
+  <div class="flex-container hidden" id="myDiv" class="hidden">
+    <div class="form-post">
+      <form action="/editprofile" method="POST" id="getForm">
+        <label for="newImage"> Type your new image URL :</label>
+        <input type="text" id="newImage" name="newImage" />
+        <label for="newDescription"> Type your new Description :</label>
+        <textarea
+          name="Description"
+          id="newDescription"
+          cols="30"
+          rows="6"
+        ></textarea>
+        <input type="submit" />
+      </form>
+    </div>
+  </div>
+  <h1>Your Friends on NXT</h1>
+  <div class="flex-container">
+    <% for(let user of users) { %> 
+      <% if (loggedInUser.friends.find(friend => friend === user.user_id)) { %>
+        <div class="users">
+          <img src="<%= user.image %>" alt="" />
+          <a href="/noaccess"><%= user.username %></a>
+          <a href="/noaccess"><%= user.emailAddress %></a>
+          <p><%= user.description %></p>
+          <div class="friendshipStatus">
+            <% if (loggedInUser.friends.find(friend => friend ===user.user_id)) { %>
+            <form action="/deleteFriend" method="POST">
+              <p>You're both Friends on NXT.</p>
+              <button type="submit" name="deleteFriend" value="<%= user.user_id %>">
+                Delete Friend
+              </button>
+            </form>
+            <% } %>
+          </div>
+        </div>
+      <% } %> 
+    <% } %>
+  </div>
+  <h1>Your Posts on NXT</h1>
+  <div class="flex-container">
+    <% for(let post of posts) { %>
+      <% if (loggedInUser.posts.find(postloggedInUser => postloggedInUser === post.post_id)) { %>
+        <div class="posts">
+          <div class="post-info">
+            <a href=""><img src="<%= post.userImage %>" alt="" /></a>
+            <p><%= post.username %></p>
+            <p><%= post.postTime %></p>
+          </div>
+          <img src="<%= post.postImage %>" alt="" />
+          <p><%= post.postDescription %></p>
+        </div>    
+      <% } %> 
+    <% } %>
+  </div>
+</div>
+<%- include('partials/footer'); %>

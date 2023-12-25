@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  /* display: grid;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "aside"
+    "footer"; */
+  max-width: 100rem;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+  gap: 5px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container-timeline {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+  gap: 5px;
+  margin: auto;
+  margin-top: 75px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container-prfile {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  /* flex-wrap: wrap; */
+  /* flex-flow: row wrap; */
+  gap: 5px;
+  margin: auto;
+  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-container-login {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-flow: row wrap;
+  gap: 5px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100%;
+  min-height: 100rem;
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  background-color: #c1cad3;
+  align-items: center;
+  border: 3px solid #007bff;
+}
+
+.users img {
+  border-top: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.users a {
+  color: #060606;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.users a:hover {
+  color: #ff7f50;
+}
+
+.users p {
+  color: #060606;
+  line-height: 1.6;
+}
+
+.friendshipStatus {
+  width: 100%;
+  background-color: #060606;
+  color: #ffffff;
+}
+.friendshipStatus p {
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.friendshipStatus form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
+.friendshipStatus button,
+.profile button {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  color: #ffffff;
+  background-color: #007bff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin: 7.5px;
+}
+
+/* Button Hover Effect */
+.friendshipStatus button:hover,
+.profile button:hover {
+  background-color: #ff7f50;
+  border-color: #ff7f50;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 88%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: #c1cad3;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.posts img {
+  border-top: 10px;
+  width: 100%;
+  height: 100%;
+}
+.posts p,.posts a,.profile p {
+  padding: 20px;
+  color: #060606;
+  line-height: 1.6;
+}
+.post-info {
+  width: 100%;
+  background-color: #c1cad3;
+  /* background-color: #a3d0ff; */
+}
+.post-info a {
+  width: 100%;
+}
+.post-info img {
+  border-top: 10px;
+  height: 60px;
+  width: 60px;
+  border: 1px solid #060606;
+  border-radius: 50%;
+  float: inline-start;
+  margin: 5px;
+}
+.post-info p {
+  color: #060606;
+  line-height: 2;
+  float: inline-start;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.post-info :nth-child(3){
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #060606;
+}
+
+li {
+  float: left;
+}
+
+li:nth-child(5),li:nth-child(6) {
+  float: right;
+}
+
+li:nth-child(5) a {
+  padding: 0;
+  height: 49px;
+  width: 49px;
+  margin: 4px;
+}
+
+li:nth-child(5) img {
+  border-top: 10px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #060606;
+  border-radius: 50%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #007bff;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #060606;
+  color: white;
+  /*position: fixed;
+  bottom: 0;
+  width: 100%;*/
+}
+
+.footerlogin {
+  text-align: center;
+  padding: 3px;
+  background-color: #060606;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #007bff; /* Blue from your palette */
+  color: #ffffff; /* White text */
+  background-color: #007bff; /* Blue background */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin: 7.5px;
+}
+
+/* Button Hover Effect */
+input[type="submit"]:hover {
+  background-color: #ff7f50; /* Coral/Orange on hover */
+  border-color: #ff7f50; /* Border color change on hover */
+}
+
+.form-post {
+  border-radius: 5px;
+  background-color: #c1cad3;
+  padding: 20px;
+  margin: auto;
+  width: 50%;
+  height: 100%;
+  /* border: 3px solid #060606; */
+}
+
+.form-post form {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  /* margin: auto; */
+  justify-content: center;
+}
+
+.form-post label {
+  padding: 5px;
+}
+
+.form-post h2 {
+  text-align: center;
+  margin: auto;
+}
+.hidden {
+  display: none;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  /* margin: auto; */
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #c1cad3;
+  padding: 20px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 66%;
+  height: 100%;
+  /* border: 3px solid #060606; */
+}
+.profile img {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+  border: 3px solid #060606;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.profile :nth-child(2) {
+  margin: auto;
+  font-size: 30px;
+  padding: 20px;
+}
+.flex-container-prfile :nth-child(5) {
+  width: 100%;
+}
+
+.logout button {
+  float: right;
+  color: #060606;
+  font-weight: bold;
+}
+.message p{
+  background-color: red;
+  text-align: center;
+  font-weight: bolder;
+  padding: 2.5px;
+}

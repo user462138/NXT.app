@@ -1,0 +1,23 @@
+<%- include('partials/headerLogin'); %>
+<section>
+  <div class="flex-container" id="myDiv" class="hidden">
+    <div class="form-post">
+      <h2>Login </h2><br>
+      <form action="/login" method="POST" id="getForm">
+        <label for="username:"> Username </label>
+        <input type="text" id="username" name="username" value="user_1" required/>
+        <label for="password"> Password </label>
+        <input type="text" id="password" name="password" value="1" required/>
+        <input type="submit" />
+      </form>
+      <br>
+      <div class="logout">
+        <form action="/signup" method="post" id="getForm">
+          <a href="">
+            <button type="submit">Don't have an account? Sign Up</button>
+          </a>
+        </form>
+      </div>
+    </div>
+  </div></section>
+<%- include('partials/footerLogin'); %>

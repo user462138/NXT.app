@@ -1,0 +1,26 @@
+<%- include('partials/header'); %>
+<div class="flex-container-timeline">
+  <div class="form-post">
+    <form action="/timeline" method="POST">
+      <label for="postDescription">Type your post here, share it with your friends</label>
+      <textarea name="postDescription" id="postDescription" cols="30" rows="6"></textarea>
+      <label for="postImage"> Type image URL :</label>
+      <input type="text" id="postImage" name="postImage" value="https://picsum.photos/3840/2160?random=0">
+      <input type="submit">
+    </form>
+  </div>
+  <div class="flex-container">
+      <% for(let post of posts) { %>
+        <div class="posts">
+          <div class="post-info">
+            <a href=""><img src="<%= post.userImage %>" alt="" /></a>
+            <p><%= post.username %></p>
+            <p><%= post.postTime %></p>
+          </div>
+          <img src="<%= post.postImage %>" alt="">
+          <p><%= post.postDescription %></p>
+        </div>
+      <% } %>
+  </div>
+</div>
+<%- include('partials/footer'); %>

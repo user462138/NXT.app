@@ -1,0 +1,32 @@
+<%- include('partials/headerLogin'); %>
+<section>
+  <% if (message) { %>
+    <div class="message">
+      <p>username has been taken already</p>
+    </div>
+  <% } %>
+  <div class="flex-container" id="myDiv" class="hidden">
+    <div class="form-post">
+      <h2>Sign Up</h2><br>
+      <form action="/newuser" method="POST" id="getForm">
+        <label for="username:"> Username </label>
+        <input type="text" id="username" name="username" value="user_example" required/>
+        <label for="emailAddress"> EmailAddress </label>
+        <input type="text" id="emailAddress" name="emailAddress" value="user@example.com" required/>
+        <label for="password"> Password </label>
+        <input type="text" id="password" name="password" value="1" required/>
+        <label for="image"> Type your new image URL :</label>
+        <input type="text" id="image" name="image"  value="https://picsum.photos/250/250?random=55"/>
+        <label for="description"> Type your new Description :</label>
+        <textarea
+          name="description"
+          id="description"
+          cols="30"
+          rows="6"
+        ></textarea>
+        <input type="submit"/>
+      </form>
+    </div>
+
+  </div></section>
+<%- include('partials/footer'); %>
