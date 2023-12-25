@@ -9,7 +9,12 @@ import { exit } from "process";
 
 const app = express();
 app.set("view engine", "ejs");
-app.set("port", 3000);
+const port = process.env.PORT
+if (!port) {
+  console.log("Port is missing")
+  exit(1)
+}
+app.set("port", port);
 app.use(express.static("public"));
 app.use(express.json({ limit: "1mb" }));
 app.use(express.urlencoded({ extended: true }));
