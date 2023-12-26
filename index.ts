@@ -320,8 +320,10 @@ app.post("/deleteFriend", async (req, res) => {
 });
 
 app.get("/timeline", async (req, res) => {
-  if (req.session.posts && req.session.user) {
-    posts = req.session.posts;
+  if (req.session.user) {
+    if (req.session.posts) {
+      posts = req.session.posts;
+    }
     loggedInUser = req.session.user;
     res.render("timeline", { users, loggedInUser, posts });
   } else {
@@ -378,8 +380,10 @@ app.post("/timeline", async (req, res) => {
 });
 
 app.get("/profile", async (req, res) => {
-  if (req.session.posts && req.session.user) {
-    posts = req.session.posts;
+  if (req.session.user) {
+    if (req.session.posts) {
+      posts = req.session.posts;
+    }
     loggedInUser = req.session.user;
     res.render("profile", { users, loggedInUser, posts });  
   } else {
