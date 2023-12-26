@@ -125,9 +125,14 @@ async function readUsersFromFile() {
 }readUsersFromFile();
 
 app.get("/", async (req, res) => {
-  if (req.session.user) {
-    loggedInUser = req.session.user;
-    req.session.save(() => res.redirect("/exploremore"));
+  if (req.session) {
+    if (req.session.posts) {
+      posts = req.session.posts;
+    }
+    if (req.session.user) {
+      loggedInUser = req.session.user;
+    }
+    res.redirect("/exploremore");
   }
   else {
     res.render("login");
@@ -239,8 +244,10 @@ app.post("/logout",async (req, res) => {
 app.get("/exploremore", async (req, res) => {
   if (req.session.user) {
     loggedInUser = req.session.user;
+    res.render("index", { users, loggedInUser });
+  } else {
+    res.render("login")
   }
-  res.render("index", { users, loggedInUser });
 });
 
 app.post("/addFriend", async (req, res) => {
@@ -313,13 +320,13 @@ app.post("/deleteFriend", async (req, res) => {
 });
 
 app.get("/timeline", async (req, res) => {
-  if (req.session.posts) {
+  if (req.session.posts && req.session.user) {
     posts = req.session.posts;
-  }
-  if (req.session.user) {
     loggedInUser = req.session.user;
+    res.render("timeline", { users, loggedInUser, posts });
+  } else {
+    res.render("login")
   }
-  res.render("timeline", { users, loggedInUser, posts });
 });
 
 app.post("/timeline", async (req, res) => {
@@ -371,13 +378,13 @@ app.post("/timeline", async (req, res) => {
 });
 
 app.get("/profile", async (req, res) => {
-  if (req.session.posts) {
+  if (req.session.posts && req.session.user) {
     posts = req.session.posts;
-  }
-  if (req.session.user) {
     loggedInUser = req.session.user;
+    res.render("profile", { users, loggedInUser, posts });  
+  } else {
+    res.render("login")
   }
-  res.render("profile", { users, loggedInUser, posts });
 });
 
 app.post("/editprofile", async (req, res) => {
