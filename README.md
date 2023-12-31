@@ -16,10 +16,10 @@ This project is a web application built using Express.js and MongoDB. It provide
 
 ```markdown
 PORT=3000<br>
-Mongodb_USERNAME=<your_mongodb_username><br>
-Mongodb_PASSWORD=<your_mongodb_password><br>
-Mongodb_DATABASE=<your_mongodb_database_name><br>
-SESSION_SECRET=<your_session_secret><br><br>
+Mongodb_USERNAME=<your_mongodb_username>
+Mongodb_PASSWORD=<your_mongodb_password>
+Mongodb_DATABASE=<your_mongodb_database_name>
+SESSION_SECRET=<your_session_secret>
 ```
 
 3. Run the App: Execute __'ts-node index.ts'__ to start the server.
