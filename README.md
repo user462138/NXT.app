@@ -25,5 +25,5 @@ SESSION_SECRET=<your_session_secret>
 3. Run the App: Execute __'ts-node index.ts'__ to start the server.
 
 ## URLs
-[NXT.app Website](https://nxt-app.onrender.com)
-[NXT.app Repositorie](https://nxt-app.onrender.com)
+[NXT.app Website](https://nxt-app.onrender.com) usually U have to wait 2m to start the node (; <br>
+[NXT.app Repositorie](https://github.com/user462138/NXT.app)
