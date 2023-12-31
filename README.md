@@ -15,7 +15,7 @@ This project is a web application built using Express.js and MongoDB. It provide
 2. **Environment Variables:** Create a **'.env'** file with the following variables:<br><br>
 
 ```markdown
-PORT=3000<br>
+PORT=3000
 Mongodb_USERNAME=<your_mongodb_username>
 Mongodb_PASSWORD=<your_mongodb_password>
 Mongodb_DATABASE=<your_mongodb_database_name>
@@ -23,3 +23,7 @@ SESSION_SECRET=<your_session_secret>
 ```
 
 3. Run the App: Execute __'ts-node index.ts'__ to start the server.
+
+## URLs
+[NXT.app Website](https://nxt-app.onrender.com)
+[NXT.app Repositorie](https://nxt-app.onrender.com)
