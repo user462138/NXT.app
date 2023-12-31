@@ -18,4 +18,4 @@ Mongodb_USERNAME=<your_mongodb_username><br>
 Mongodb_PASSWORD=<your_mongodb_password><br>
 Mongodb_DATABASE=<your_mongodb_database_name><br>
 SESSION_SECRET=<your_session_secret><br><br>
-3. Run the App: Execute npm start to start the server.
+3. Run the App: __Execute 'ts-node index.ts'__ to start the server.
