@@ -12,10 +12,10 @@ This project is a web application built using Express.js and MongoDB. It provide
 
 ## Setup
 1. **Install Dependencies:** Run **'npm install'** to install all required packages.
-2. **Environment Variables:** Create a **'.env'** file with the following variables:<br>
-PORT=3000
-Mongodb_USERNAME=<your_mongodb_username>
-Mongodb_PASSWORD=<your_mongodb_password>
-Mongodb_DATABASE=<your_mongodb_database_name>
-SESSION_SECRET=<your_session_secret><br>
+2. **Environment Variables:** Create a **'.env'** file with the following variables:<br><br>
+PORT=3000<br>
+Mongodb_USERNAME=<your_mongodb_username><br>
+Mongodb_PASSWORD=<your_mongodb_password><br>
+Mongodb_DATABASE=<your_mongodb_database_name><br>
+SESSION_SECRET=<your_session_secret><br><br>
 3. Run the App: Execute npm start to start the server.
