@@ -1,4 +1,4 @@
-<span style="color:#007bff"># NXT.app</span>
+<span style="color: blue;"># NXT.app</span>
 
 ## Web Application with Express.js and MongoDB
 This project is a web application built using Express.js and MongoDB. It provides functionalities for user authentication, session management, and data storage.
