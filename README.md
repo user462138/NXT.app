@@ -1,15 +1,16 @@
 # NXT.app
 
-Web Application with Express.js and MongoDB
+## Web Application with Express.js and MongoDB
 This project is a web application built using Express.js and MongoDB. It provides functionalities for user authentication, session management, and data storage.
 
-Features
+## Features
 User Authentication: Users can sign up, log in, and log out securely.
 Session Management: Sessions are stored in MongoDB using express-session and connect-mongodb-session.
 User Profiles: Users can view and edit their profiles, including updating their image and description.
 Friend Management: Users can add and delete friends, stored persistently in the database.
 Post Management: Users can create posts, view timelines, and interact with posts.
-Setup
+
+## Setup
 Install Dependencies: Run npm install to install all required packages.
 Environment Variables: Create a .env file with the following variables:
 makefile
